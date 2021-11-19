@@ -1,0 +1,39 @@
+#cabezera_formulario{
+    background-color: #AA6239;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+}
+#footer_formulario{
+    background-color: #AA6239;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+}
+#botonGuardarAlta{
+  width: 100%;
+}
+.fondo_formuario{
+    
+    background-color: #C27F38;
+    border: 5px solid #AA6239;
+}
+.fondo_formuario label{
+    font-weight: bold;
+}
+.btn-color:hover{
+    background-color: #468B78;
+}
+.btn-color{
+    background-color: #0E5441;
+    color: white;
+}
+.ventana-info{
+    background-color: white;
+    border: 5px solid #AA6239;
+    height: 200px;
+}
+.form-check:hover{
+    background-color: #AA6239;
+}
+    

@@ -1,0 +1,12 @@
+.fondo{
+    background-color: #6FA798;
+}
+.fondo_nav_bar{
+    background-color: #AA6239;
+}
+.nav-item:hover{
+    border-bottom: 2px solid white;
+}
+.nav-item.active{
+    border-bottom: 2px solid white;
+}

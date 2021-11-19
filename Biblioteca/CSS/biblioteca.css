@@ -1,0 +1,13 @@
+body{
+    background-color: white;
+    font-family: 'Arial', Times, serif;
+    font-size: 18px;
+}
+main{
+    background-color: #6FA798;
+    min-height: 70vh;
+}
+.login:hover{
+background-color: #6FA798;
+
+}

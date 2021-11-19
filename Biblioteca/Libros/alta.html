@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/biblioteca.css">
+    <link rel="stylesheet" href="../CSS/cabezera.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/navegacion.css">
+    <link rel="stylesheet" href="../CSS/formulario.css">
+    <link href="../iconos/css/all.css" rel="stylesheet">
+</head>
+
+<body class="container">
+    <header id="header" class="row align-items-center justify-content-around">
+        <article class="col-2 ">
+            <a href="index.html"><img src="../imagenes/library-svgrepo-com.svg" id="imagen_inicio" class="img-fluid"></a> 
+        </article>
+        <article class="col-8 ">
+            <h1>Biblioteca</h1>
+        </article>
+        <article class="col-2 ">
+            <i class="fas fa-user-circle fa-3x"></i>
+            <h5 class="login">Nombre</h5> 
+        </article>
+
+    </header>
+    <div class="row align-items-center justify-content-around fondo">
+        <div class="col-6">
+            <nav class="navbar navbar-expand-md navbar-dark fondo_nav_bar rounded-bottom">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"></div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-expanded="false">
+                                Libros
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Listado</a>
+                                <a class="dropdown-item" href="alta.html">Alta</a>
+                                <a class="dropdown-item" href="#">Modificación</a>
+                                <a class="dropdown-item" href="baja.html">Baja</a>
+                            </div>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="busqueda.html">Buscar <span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Cerrar sesion <span class="sr-only"></span></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+    <main id="main" class="row justify-content-center">
+
+        <section class="col-10 my-4">
+            <div class="row justify-content-center">
+                <div class="col" id="cabezera_formulario">
+                    <h1>Alta de libros</h1>
+                </div>
+            </div>
+            <div class="row fondo_formuario justify-content-center ">
+                <div class="col-10 my-4 ">
+                    <form>
+                        <div class="row justify-content-around">
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label for="isbn">ISBN</label>
+                                    <input type="text" class="form-control" id="isbn">
+                                </div>
+                                <div class="form-group">
+                                    <label for="titulo">Título</label>
+                                    <input type="text" class="form-control" id="titulo">
+                                </div>
+                                <div class="form-group">
+                                    <label for="autor">Autor</label>
+                                    <input type="text" class="form-control" id="autor">
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label for="fecha">Fecha</label>
+                                    <input type="date" class="form-control" id="fecha">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="cantidad">Cantidad</label>
+                                    <input type="number" class="form-control" id="cantidad">
+                                </div>
+                                <div class="form-group">
+                                    <label for="genero">Genero</label>
+                                    <input type="text" class="form-control" id="cantidad">
+                                </div>
+
+                            </div>
+                            <div class="col-4">   
+                                <div class="form-group" style="border: 10px solid white; border-radius: 1%;">
+                                    <img src="../imagenes/portadas-libros-big-2019101610.jpg" class="img-fluid rounded">
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="customFile" >
+                                        <label class="custom-file-label" for="customFile">Imagen</label>
+                                      </div>
+                                </div>                         
+                                
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="footer_formulario" class="row justify-content-center ">
+                <div class="col-4 mb-1">
+                    <input type="button" id="botonGuardarAlta" class="btn btn-color" value="Guardar"></input>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer id="footer" class="row">
+        <p>AUTOR</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

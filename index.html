@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+
+    <style>
+        #header {
+            color: white;
+        }
+
+        #main {
+            margin-top: 10px;
+            background-color: rgb(182, 182, 182);
+        }
+
+        #aside {
+            height: 200px;
+            background-color: rgb(151, 151, 151);
+            color: blue;
+        }
+
+        #caja {
+            margin-top: 10px;
+            height: 150px;
+            background-color: rgb(145, 182, 241);
+        }
+
+        #footer {
+            color: white;
+            background-color: black;
+            margin-top: 10px;
+        }
+
+        .verde {
+            background-color: rgb(175, 224, 118);
+        }
+    </style>
+
+</head>
+
+<body class="container">
+    <header id="header" class="row">
+        <div class="col-md-12 verde">
+            <h1>Header</h1>
+            <p>12 columnas</p>
+        </div>
+    </header>
+    <main>       
+        <div class="row align-items-center">
+            <section id="main" class="col-md-8">
+                <h1>Main</h1>
+                <p>8 columnas</p>
+                <p>Dentro de cada fila (row), en principio podemos tener hasta 12 columnas (col), aunque ya veremos
+                    posteriormente que dado a que Bootstrap 4 utiliza contenedores flex podemos usar las propiedades de
+                    estos
+                    contenedores flex para poner más columnas. En realidad, es difícil que tengamos que utilizar más de
+                    12.
+                    Todas estas columnas (col) están pegadas unas a otras y tiene siempre un padding izquierda y derecha
+                    de 15px
+                    del que hablaremos posteriormente.
+                    Otra cosa importante es que no tenemos que olvidarnos de utilizar class=”row” ya que si nuestra
+                    estructura de
+                    columnas no está dentro de un div con esa clase perderemos todas las propiedades de los contenedores
+                    flex,
+                    que son los que sustentan la maquetación en Bootstrap 4.
+                    A modo de ejemplo, añado una estructura de 1 fila por 12 columnas alternando colores y estableciendo
+                    un alto
+                    mínimo a la fila de 200px</p>
+                </section>
+            <section id="aside" class="col-md-4" >
+                <h1>Aside</h1>
+                <p>4 columnas</p>
+            </section>
+        </div>
+        <div class="row justify-content-between">
+            <article id="caja" class="col-md-3">
+                <p>3 columnas</p>               
+            </article>
+            
+            <article id="caja" class="col-md-3">
+                <p>3 columnas</p>
+            </article>
+            
+            <article id="caja" class="col-md-3">
+                <p>3 columnas</p>
+            </article>
+        </div>
+       
+
+
+
+    </main>
+    <footer class="row">
+        <div id="footer" class="col-md-12">
+            <h1>Footer</h1>
+            <p>12 columnas</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
