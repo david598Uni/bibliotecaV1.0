@@ -15,7 +15,7 @@
 <body class="container">
     <header id="header" class="row">
         <article class="col-2 align-self-center">
-            <img src="../imagenes/library-svgrepo-com.svg" id="imagen_inicio" class="img-fluid">
+            <a href="indexLog.html"><img src="../imagenes/library-svgrepo-com.svg" id="imagen_inicio" class="img-fluid"></a> 
         </article>
         <article class="col-8 align-self-center">
             <h1>Biblioteca</h1>
@@ -35,23 +35,21 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item ">
-                            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="indexLog.html">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown active">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-expanded="false">
                                 Libros
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Listado</a>
-                                <a class="dropdown-item" href="Libros/alta.html">Alta</a>
-                                <a class="dropdown-item" href="#">Modificación</a>
-                                <a class="dropdown-item" href="Libros/baja.html">Baja</a>
+                            <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="busqueda.html">Listado</a>
+                                <a class="dropdown-item" href="alta.html">Alta</a>
+                                <a class="dropdown-item" href="modificacion.html">Modificación</a>
+                                <a class="dropdown-item" href="baja.html">Baja</a>
                             </div>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="Libros/busqueda.html">Buscar <span class="sr-only"></span></a>
-                        </li>
+                       
                         <li class="nav-item ">
                             <a class="nav-link" href="../index.html">Cerrar Sesion <span class="sr-only"></span></a>
                         </li>
