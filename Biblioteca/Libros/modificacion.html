@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../CSS/cabezera.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/navegacion.css">
+    <link rel="stylesheet" href="../CSS/formulario.css">
     <link href="../iconos/css/all.css" rel="stylesheet">
 </head>
 
@@ -58,8 +59,74 @@
             </nav>
         </div>
     </div>
-    <main id="main" class="row">
-        <section class="col-12" style="height: 700px;"></section>
+    <main id="main" class="row justify-content-center">
+        
+        <section class="col-10 my-4">
+            <div class="row justify-content-center">
+                <div class="col" id="cabezera_formulario">
+                    <h1>Modificar</h1>
+                </div>
+            </div>
+            <div class="row fondo_formulario justify-content-center ">
+                <div class="col-10 my-4 ">
+                    <form>
+                        <div class="row justify-content-around">
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label for="isbn">ISBN</label>
+                                    <input type="text" class="form-control" id="isbn" value="ISBN">
+                                </div>
+                                <div class="form-group">
+                                    <label for="titulo">Título</label>
+                                    <input type="text" class="form-control" id="titulo" value="titulo">
+                                </div>
+                                <div class="form-group">
+                                    <label for="autor">Autor</label>
+                                    <input type="text" class="form-control" id="autor" value="autor">
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label for="fecha">Fecha</label>
+                                    <input type="date" class="form-control" id="fecha" >
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="cantidad">Cantidad</label>
+                                    <input type="number" class="form-control" id="cantidad" >
+                                </div>
+                                <div class="form-group">
+                                    <label for="genero">Genero</label>
+                                    <input type="text" class="form-control" id="genero" value="genero">
+                                </div>
+
+                            </div>
+                            <div class="col-4">   
+                                <div class="form-group" style="border: 10px solid white; border-radius: 1%;">
+                                    <img src="../imagenes/portadas-libros-big-2019101610.jpg" class="img-fluid rounded">
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="customFile" >
+                                        <label class="custom-file-label" for="customFile">Imagen</label>
+                                      </div>
+                                </div>                         
+                                
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="footer_formulario" class="row justify-content-center ">
+                <div class="col-4 mb-1">
+                    <input type="button" id="botonGuardarAlta" class="btn btn-color" value="Guardar"></input>
+                </div>
+            </div>
+        </section>
+
+
+
     </main>
     <footer id="footer" class="row">
         <p>AUTOR</p>
